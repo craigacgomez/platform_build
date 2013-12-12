@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     libaudiopreprocessing \
     libaudioutils \
     libbcc \
+    libemoji \
     libfilterpack_imageproc \
     libgabi++ \
     libkeystore \
