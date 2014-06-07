@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Development \
     LockClock \
+    OmniTorch \
     Superuser \
     WebView \
     e2fsck \
