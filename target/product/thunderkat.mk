@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
 # Overrides for default properties
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=1 \
-    ro.secure=1
+    ro.secure=0
 
 # Overrides for product properties
 PRODUCT_PROPERTY_OVERRIDES += \
