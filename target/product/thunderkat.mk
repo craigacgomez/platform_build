@@ -18,6 +18,13 @@ PRODUCT_PACKAGES += \
     su \
     tune2fs
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
+
 # Overrides for default properties
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=1 \
