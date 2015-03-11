@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     Email \
     Exchange2 \
     ExternalStorageProvider \
+    FMRadio \
     FusedLocation \
     InputDevices \
     KeyChain \
@@ -49,6 +50,7 @@ PRODUCT_PACKAGES += \
     SharedStorageBackup \
     Telecom \
     TeleService \
+    Terminal \
     VpnDialogs \
     MmsService
 
