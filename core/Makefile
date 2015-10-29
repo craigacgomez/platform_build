@@ -323,11 +323,11 @@ $(hide) echo $(1)
 
 endef
 
-name := $(TARGET_PRODUCT)
+name := Marshmallicious_$(TARGET_PRODUCT)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := $(name)-apkcerts-$(FILE_NAME_TAG)
+name := $(name)-$(BUILD_ID)-$(shell date +%Y%m%d)
 intermediates := \
 	$(call intermediates-dir-for,PACKAGING,apkcerts)
 APKCERTS_FILE := $(intermediates)/$(name).txt
