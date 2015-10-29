@@ -17,19 +17,20 @@
 # that should not be in PDK should be added in lower level like core.mk.
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.config.notification_sound=OnTheHunt.ogg \
-    ro.config.alarm_alert=Alarm_Classic.ogg
+    ro.config.ringtone=Callisto.ogg \
+    ro.config.notification_sound=Ceres.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
 
 PRODUCT_PACKAGES += \
     ContactsProvider \
     DefaultContainerService \
-    Home \
     TelephonyProvider \
     UserDictionaryProvider \
     atrace \
     libandroidfw \
     libaudiopreprocessing \
     libaudioutils \
+    libemoji \
     libfilterpack_imageproc \
     libgabi++ \
     libmdnssd \
@@ -61,5 +62,9 @@ PRODUCT_PACKAGES += \
     mdnsd \
     requestsync \
     wifi-service
+
+ADDITIONAL_DEFAULT_PROPERTIES := \
+    ro.adb.secure=1 \
+    ro.secure=0
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
