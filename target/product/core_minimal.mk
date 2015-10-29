@@ -106,11 +106,16 @@ PRODUCT_SYSTEM_SERVER_JARS := \
 PRODUCT_PACKAGES += \
     e2fsck \
     make_ext4fs \
+    mke2fs \
+    tune2fs \
     fsck.f2fs \
     make_f2fs \
+    mkfs.f2fs \
+    fibmap.f2fs
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.zygote=zygote32
+
 PRODUCT_COPY_FILES += \
     system/core/rootdir/init.zygote32.rc:root/init.zygote32.rc
 
