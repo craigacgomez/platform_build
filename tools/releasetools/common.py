@@ -1386,10 +1386,6 @@ def MakeRecoveryPatch(input_dir, output_sink, recovery_img, boot_img,
   else:
     bonus_args = ""
 
-  d = Difference(recovery_img, boot_img, diff_program=diff_program)
-  _, _, patch = d.ComputePatch()
-  output_sink("recovery-from-boot.p", patch)
-
   try:
     boot_type, boot_device = GetTypeAndDevice("/boot", info_dict)
     recovery_type, recovery_device = GetTypeAndDevice("/recovery", info_dict)
