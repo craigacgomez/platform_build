@@ -252,9 +252,6 @@ endif
 $(INSTALLED_BUILD_PROP_TARGET): $(intermediate_system_build_prop) $(INSTALLED_RECOVERYIMAGE_TARGET)
 	@echo "Target build info: $@"
 	$(hide) cat $(intermediate_system_build_prop) > $@
-ifdef INSTALLED_RECOVERYIMAGE_TARGET
-	$(hide) echo ro.expect.recovery_id=`cat $(RECOVERYIMAGE_ID_FILE)` >> $@
-endif
 
 # -----------------------------------------------------------------
 # vendor build.prop
